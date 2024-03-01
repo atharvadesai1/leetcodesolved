@@ -9,7 +9,7 @@ def titleToNumber(columnTitle):
 
     for i in range(len(columnTitle)-1,-1,-1):
         value = dict[columnTitle[i]]
-        ans += (26**k)*value
+        ans += (26**k)*value    
         k+=1
     return ans
 
