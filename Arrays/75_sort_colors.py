@@ -30,8 +30,6 @@ while k < len_blue:
     nums[k] = 2
     k+=1
 
-
-
 print(nums)
 
 # nums = [9,43,21,54,7,65,32,111]
@@ -45,3 +43,5 @@ print(nums)
 #     if min_element != nums[i]:
 #         nums[i], nums[min_index] = nums[min_index], nums[i]
 # print(nums)
+
+#done
