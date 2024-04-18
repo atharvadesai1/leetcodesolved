@@ -4,27 +4,27 @@ class ListNode(object):
         self.next = next
 
 def reverseList(head):
-        if not head:
-            return head
-        if not head.next:
-            return head
-        nums = []
-        current_node = head
-        while current_node:
-            nums.append(current_node.val)
-            current_node = current_node.next
-        nums.reverse()
+    if not head:
+        return head
+    if not head.next:
+        return head
+    nums = []
+    current_node = head
+    while current_node:
+        nums.append(current_node.val)
+        current_node = current_node.next
+    nums.reverse()
 
-        top = ListNode()
-        top.val = nums[0]
-        top.next = ListNode()
-        current_node = top.next
-        for i in range(1,len(nums)):
-            current_node.val = nums[i]
-            if i != len(nums)-1:
-                current_node.next = ListNode()
-                current_node = current_node.next
-        return top
+    top = ListNode()
+    top.val = nums[0]
+    top.next = ListNode()
+    current_node = top.next
+    for i in range(1,len(nums)):
+        current_node.val = nums[i]
+        if i != len(nums)-1:
+            current_node.next = ListNode()
+            current_node = current_node.next
+    return top
 
 print('*****************REVERSING THE LINKED LIST*****************')
 print()
