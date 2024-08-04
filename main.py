@@ -22,3 +22,4 @@ array = [2,2,1,1,1,2,2]
 ans = majorityElement(array)
 print(ans)
 
+print("Done!!")
